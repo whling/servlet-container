@@ -30,7 +30,7 @@ public class Webapp {
             for (Object ele: elements) {
                 Element e = (Element) ele;
                 if ("servlet".equals(e.getName())) {
-
+                    List servletMapingList = e.elements();
                 } else if ("servlet-mapping".equals(e.getName())) {
 
                 }

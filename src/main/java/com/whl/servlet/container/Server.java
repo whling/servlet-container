@@ -46,7 +46,7 @@ public class Server {
             try {
                 es.submit(new Dispatcher(serverSocket.accept()));
             } catch (Exception e) {
-                logger.error("", e);
+                logger.error("handle the req occur error", e);
             }
         }
     }
